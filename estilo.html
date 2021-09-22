@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS::</title>
+    <!-- estilos css-->
+    <style> /* Todo parte desde la izquierda y generalmente desde la esquina superior*/
+        *{
+            margin: 0; /* separandome de otros elementos, efecto de separacion*/
+                        /* pero en realidad margin añade px en el elemento en total*/
+                        /* puede dividirse en 4 o 3 o 2, 10px 20px 30px 10px */
+                        /* top rigth bottom left*/
+            padding: 0; /* como un margen interno con el borde, pero sigue sumando al total del elemento*/
+                        /* recordar restar al total en el estilo para que no se desordene todo*/
+                        /* desplaza hacia dentro*/
+                        /* al usuario le da lo mismo como lo manejemos mientra el lo pueda ver bien*/
+        }       
+
+        /* "!important" toma prioridad sobre todo los demas propiedades*/
+        /* 3 formas de dar estilos a los elementos 
+            Por la etiqueta*/
+        p { /* a todas las etiquetas "p" en este caso */
+            color: red;
+            font-family: verdana;
+            font-size: 24px;
+        } 
+        /* a traves de la clase (.)*/
+        .cp2 { /*todos elementos que contengan esta clase en class */
+            color: green;
+            font-family: aria;
+            font-size: 40px;
+        }
+
+        /* a traves del id (#)*/
+        /* solo elemento especifico del id*/
+        #p4 { /* unico en todo el documento*/
+            color: rgb(232, 18, 252);
+            font-size: 60px;
+        }
+
+        #div1 { 
+
+            background-color: rgb(235, 154, 154);
+            width: 100px;
+            height: 100px;
+            margin: 10px 20px 30px 10px; /* top rigth bottom left*/
+            padding: 100px;
+        }
+
+        #div2 {
+            background-color: rgb(60, 191, 231);
+            width: 30px;
+            height: 30px;
+            
+        }
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <p id="p1">Parrafo 1</p>
+        <p id="p2" class="cp2">Parrafo 2</p>
+        <p id="p3" class="cp2">Parrafo 3</p>
+        <p id="p4" class="cp2">Parrafo 4</p>
+        <br>
+        <div id="div1">
+            <div id="div2">
+
+
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

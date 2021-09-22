@@ -11,10 +11,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!-- util para la vista-->
     <title>Holi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
 <body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
     <!-- contenedor principal-->
     <div class="container">
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ejemplo02.html">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ejemplo01.html">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+
         <h1> Titulo 1</h1>
         <h2> Titulo 2</h2>
         <h3> Titulo 3</h3>
@@ -27,8 +50,11 @@
         <img src="" alt="Imagen no encontrada"> <!-- imagen-->
         <!-- busqueda por voz, con alt?-->
         <br>
-        <img  src="imagen/1056195.png" alt="Imagen" width="300px"> <!-- imagen -->
-        <br>
+        <div style="width: 400px;">
+            <img  src="imagen/1056195.png" alt="Imagen" class="img-fluid rounded float-start" > <!-- imagen -->
+        </div>
+        
+        <br> <!-- toma el ancho del container como maximo "-fluid"-->
         <hr>
         <!-- hiper vinculo (a)-->
         <a href="https://www.google.com" target="" >Google</a>
@@ -64,8 +90,11 @@
             <li> tercero </li>
         </ol>
 
-        
+
+
 
     </div>
+
 </body>
+
 </html>
